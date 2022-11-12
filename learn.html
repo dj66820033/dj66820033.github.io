@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Acupuncture, Acupuncturist, Chinese Acupuncture, Chinese Acupuncturist, Chinese Medicine , Chinese herbs, Chinese medicine doctor, Chinese herbal medicine, Acupuncture Etobicoke, Acupuncturist Etobicoke, Acupuncture Toronto, Acupuncturist Toronto, Acupuncture Mississauga, Acupuncturist Mississauga, Acupuncture Ontario, Acupuncturist Ontario, Acupuncturist near me, Acupuncture near me, Acupuncture clinic, Chinese medicine clinic , Acupuncture therapy, Herbal medicine, Cosmetic acupuncture, Facial Acupuncture, Cupping therapy, Chinese cupping, Moxibustion Therapy, Chines Moxibustion, Registered Acupuncturist, Face lifting acupuncture , Facial rejuvenation acupuncture, Facial rejuvenation , Pain relief acupuncture, Pain reduction acupuncture, Stress relief acupuncture, Sleep disorder acupuncture, Insomnia Acupuncture, Anxiety acupuncture, Quit Smoking acupuncture , Weight loss acupuncture, Weight control acupuncture, Weight management acupuncture, Fertility acupuncture, Infertility acupuncture, Quit alcohol acupuncture, Acupuncture for depression, Acupuncture for headache, Acupuncture for migraine, Headache, Migraine, Low Back Pain, Joint Pain, Foot Pain, Auto and Sport Injuries, Stiff Neck, Rheumatism, Arthritis, Tendonitis, Rotator Cuff Pain, Frozen Shoulder, Tennis Elbow, Carpal Tunnel Syndrome, Neuralgia, Sciatica, Shingles, Trigeminal Neuralgia, Multiple Sclerosis, Gout, Fibromyalgia, Sexual Dysfunction, Impotence, Premature Ejaculation, Irregular Periods, Menopause, Infertility, Menstrual Cramps, Premenstrual Syndrome, Endometriosis, Prolapse of Uterus, Pelvic Inflammation, Uterine Fibroids, Smoking, Alcohol, Insomnia, Stress, Depression, Anxiety, Bell's Palsy, Hemiplegia, Paraplegia, Sequel of Polio, Cerebral Palsy, Allergies, Asthma, Cough, Urethritis, Cystitis, Bed-wetting, Kidney Stones, Skin Itching, Genitals Itching, Acne, Eczema, Dermatitis, Hair Loss, Psoriasis, Vitiligo, Tinnitus, Sinusitis, Rhinitis, Dizziness, Meniere’s Disease, Ear Infection, Constipation, Colitis, IBS, Peptic Ulcer, Indigestion, Abdominal Pain, Diarrhea, Vomiting, Nausea, Hiccup, Prolapse of Stomach, Hemorrhoids, Gallstones, Parkinson, Side-effects of Chemo-Radio-Therapy for Cancers, Overweight, Fatigue, Poor Circulation, Low Energy, High Blood Pressure, Diabetes, High Cholesterol, Immune System Deficiency">
         <title>Wendy’s Acupuncture and Rehab Clinic</title>
         <link rel="stylesheet" href="style2.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
@@ -11,6 +12,7 @@
             $("document").ready(function(){
                 $("#btn").click(fun);
                 $(window).scroll(function(){
+                    show();
                     var scrollHeight = $(document).scrollTop();
                     if (scrollHeight > 200){
                         $(".top").css("display","grid");
@@ -23,7 +25,32 @@
             function fun(){
                 $("#navigationmanu").slideToggle("slow");
             }
-            
+            function show(){
+            var date = new Date();
+            var CurrentYear = "";
+            CurrentYear = date.getFullYear();
+            var CopyrightsText = "Copyright  &copy;  " + CurrentYear + " Wendy's Acupuncture, All rights reserved"
+            document.getElementById("Copyrights").innerHTML = CopyrightsText;
+            }
+        </script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1044836506"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-1044836506');
+        </script>
+
+        <!-- Google tag (gtag.js) --> 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-31VC9RJ5XP"></script> 
+        <script> 
+            window.dataLayer = window.dataLayer || []; 
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date()); 
+            gtag('config', 'G-31VC9RJ5XP'); 
         </script>
     </head>
 
@@ -144,8 +171,17 @@
                 <a class="footlink" href="scope.html#Moxibustion">Moxibustion Therapy</a> <span>|</span>
                 <a class="footlink" href="location.html">Contact Us</a>
             </nav>
-            <div class="footercolor2">Copyright  &copy;  2020 Wendy's Acupuncture, All rights reserved <br><br></div>
+            
+            <div class="footercolor2" id="Copyrights"><br><br></div>
             <br><br>
+
+            <script>
+                window.addEventListener('load', function(){
+                  jQuery('a[href^="mailto:"]').click(function(){
+                    gtag('event', 'conversion', {'send_to': 'AW-1044836506/1ifXCN7B4m4QmuGb8gM'});
+                  });
+                });
+            </script>              
         </footer>
     </body>
 </html>
